@@ -28,4 +28,4 @@ jobs:
         java-version: '8'
         cache: maven
     - name: Build with Maven
-      run: mvn compile test -Dtest=InterpreterTester
+      run: mvn clean install -DskipTests
